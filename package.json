@@ -2,15 +2,13 @@
   "name": "react-native-watch-connectivity",
   "version": "1.0.2",
   "description": "React Native library to enable communication with Apple Watch app",
-  "main": "dist/index.js",
   "files": [
-    "dist",
+    "lib",
     "ios",
     "LICENSE.md",
     "README.md",
     "RNWatch.podspec"
   ],
-  "types": "dist/index.d.ts",
   "license": "MIT",
   "author": {
     "name": "Michael Ford",
@@ -36,7 +34,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mtford90/react-native-watch-connectivity.git"
+    "url": "https://github.com/kgibbe1/react-native-watch-connectivity.git"
   },
   "peerDependencies": {
     "react": ">=15.1",
