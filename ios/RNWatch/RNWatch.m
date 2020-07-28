@@ -73,6 +73,13 @@ RCT_EXPORT_MODULE()
     return sharedInstance;
 }
 
+- (void) dealloc{
+    if ([WCSession isSupported]) {
+        [self.session removeObserver:self forKeyPath:@"paired" context:nil];
+        [self.session removeObserver:self forKeyPath:@"watchAppInstalled" context:nil];
+    }
+}
+
 - (NSArray<NSString *> *)supportedEvents {
     return @[
             EVENT_FILE_TRANSFER,
